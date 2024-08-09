@@ -31,9 +31,9 @@ public class SongService {
         Optional<Song> songOptional = songRepository.findById(String.valueOf(id));
         if (songOptional.isPresent()) {
             songRepository.deleteById(String.valueOf(id));
-            return "Song is deleted";
+            return "Song is deleted.";
         } else {
-            return "Song not found";
+            return "Song not found.";
         }
     }
 
