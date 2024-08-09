@@ -24,7 +24,6 @@ spring:
             - RewritePath=/users/(?<segment>.*), /$\{segment}
 
 
-
 eureka:
   client:
     register-with-eureka: false
